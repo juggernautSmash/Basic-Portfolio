@@ -6,7 +6,7 @@ header{
   left: 0;
   top: 0; 
   width: 100%;
-  border: 2px solid red;
+  /*border: 2px solid red; */
 }
 h1 {
   font-size: 30px;
@@ -101,26 +101,20 @@ ul {
   float: right;
   margin-top: 36px;
 }
-.gallery {
-  background-color: #ffffff;
-  margin: 5px; 
-  float: left;
-  width: 180px;
+.grid-container {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  padding: 10px;
 }
-
-.gallery:hover {
-  border: 1px solid #777777;
-}
-
-.gallery img {
-  width: 100%;
-  height: auto;
-  display: inline;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.desc {
-  padding: 15px;
+.grid-item {
+  padding: 20px;
+  font-size: 30px;
   text-align: center;
+}
+.portfolioLabel{
+  background-color: #4aaaa5;
+  color: white;
+  margin-top: -50px;
+  text-align: center;
+  position: relative;
 }
